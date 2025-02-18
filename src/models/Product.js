@@ -8,28 +8,36 @@ const Product = sequelize.define('products', {
         autoIncrement: true
     },
     name: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        allowNull: false
     },
     brand: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        allowNull: false
     },
     category: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        allowNull: false
     },
     description: {
-        type: DataTypes.TEXT
+        type: DataTypes.TEXT,
+        allowNull: false
     },
     img_url: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        allowNull: false
     },
     certification: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        allowNull: false
     },
     where_to_buy: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        allowNull: false
     },
 }, {
     timestamps: true
-})
+});
+
 
 module.exports = Product;
