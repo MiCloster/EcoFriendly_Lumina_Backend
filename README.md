@@ -1,1 +1,0 @@
-# EcoFriendly_Lumina_Backend
